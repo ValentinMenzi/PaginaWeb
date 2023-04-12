@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" 
+    href="../imagenes/car.png" 
+    type="image/x-icon">
+    
+
+
+</head>
+
+<body>   
+    <header class="blanco barra-inicio">
+
+        <div class="logo">
+        <a href="">
+            <img src="../imagenes/logo.jpg" alt="">
+        </a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="autos.html">Autos</a></li>
+                <li><a href="quienessomos.html">¿Quienes Somos?</a></li>
+                <li><a href="donde.html">¿Donde Estamos?</a></li>
+                <li><a class="gris href="contacto.html">Contacto</a>
+            </ul>
+            </nav>
+    </header>
+
+    <main> 
+        <section>
+            <form action="">
+                <h2 class="subtitulo">Formulario de Contacto</h2>
+                <fieldset>
+
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" />
+                    </div>
+                    <div>
+                        <label for="apellido">Apeliddo:</label>
+                        <input type="text" name="apellido" />
+                    </div>
+                    <div>
+                        <label for="motivo">Motivo de contacto:</label>
+                        <select name="tipo" id="tipo">
+                            <option value="Alquiler">Alquiler</option>
+                            <option value="Compra">Compra</option>
+                        </select>
+                    </div>
+
+                    <div>
+                         <label for="tipo-auto">¿En que auto esta interesado?</label>
+                         <div>
+                            <textarea name="mensaje"
+                            id="mensaje"
+                            cols="30" 
+                            rows="2"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    </div>
+                    <label for="">En el caso que usted quiera alquilar ¿Cuantos dias?</label>
+                        <div>
+                            <label for="dias">Dias:</label>
+                            <select name="dia" id="dia">
+                                <option value="dia1">1</option>
+                                <option value="dia2">2</option>
+                                <option value="dia3">3</option>
+                                <option value="dia4">4</option>
+                                <option value="dia5">5</option>
+                                <option value="dia6">6</option>
+                                <option value="dia7">7</option>
+                                <option value="dia8">8</option>
+                                <option value="dia9">9</option>
+                                <option value="dia10">10</option>
+                                <option value="dia11">11</option>
+                                <option value="dia12">12</option>
+                                
+                            </select>
+                        </div>
+                    <div>
+                        <input class="submit" type="submit" value="Enviar formulario">
+                        <input class="submit" type="reset" value="Borrar formulario">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+    
+        <div class="logo">
+            <a href="">
+                <img src="../imagenes/logo.jpg" alt="">
+            </a>
+        </div>
+        
+        <div> 
+        <h4 class="blanco pie">Para mas informacion no dude en contactarnos</h4>
+        </div>
+        <div class="blanco botoncontacto">
+        <a href="pages/contacto.html">Contacto</a>
+        </div>
+    </footer>
+    
+</body>
+</html>
