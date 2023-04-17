@@ -156,7 +156,7 @@ html{
 }
 
 .subtitulo{
-    text-align: right;
+    text-align: center;
     padding-bottom: 2%;
     font-size: 300%;
     color: #fff;
@@ -183,12 +183,13 @@ div p{
     max-width: 0%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) or (max-height: 769px){
     header{
         background-color: rgb(0, 0, 0);
         height: 132px;
         position: none;
         max-width: 100%;
+        
     }
     
     .grande {
@@ -212,7 +213,6 @@ div p{
     }  
     nav li a {
         color: #fff;
-        text-decoration: none;
     }
     
     .botonauto {
@@ -233,7 +233,44 @@ div p{
     .logo{
         max-width: 100%;
     }
+    .pie{
+        font-size: 150%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
 
-    
-    
+    .botoncontacto{
+        font-size: 140%;
+    }
+
+    footer{
+        background-color: rgb(143, 0, 0);
+        height: 220px;
+    }
+
+    .tablaautos{
+        text-align: center;
+        font-size: 75%;
+        margin: 1% 1%;
+        padding-bottom: 1%;
+    }
+
+    .subtitulo{
+        text-align: center;
+        font-size: 200%;
+    }
+
+    .parrafo{
+        text-align: center;
+        font-size: 100%;
+    }
+
+    fieldset div{
+        padding-top: 1%;
+        font-size: 80%;
+    }
+
+    .contacofooter {
+        padding-top: 100%;
+    }
 }
