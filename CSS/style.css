@@ -120,11 +120,15 @@ td img{
     padding-top: 8%;
     color: #fff;
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
 td{
     color: #fff;
     text-align: center;
+    margin: auto;
+    font-size: 120%;
 }
 
 label{
@@ -153,8 +157,8 @@ html{
 .tablaautospadre{
     margin: auto;
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 
@@ -275,5 +279,16 @@ div p{
 
     .contacofooter {
         padding-top: 100%;
+    }
+    .tablaautospadre{
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    td{
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        font-size: 100%;
     }
 }
