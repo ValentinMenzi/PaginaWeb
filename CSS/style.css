@@ -180,5 +180,9 @@ div p{
 
 .gris{
     color: darkred;
+    max-width: 0%;
 }
 
+@media (max-width: 767px) {
+    
+}
