@@ -12,6 +12,21 @@ img {
   max-width: 100%;
 }
 
+.logo {
+  max-width: 100%;
+  animation: slidein 1s ease;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    filter: contrast();
+  }
+  10% {
+    opacity: 1;
+    filter: brightness(2) blur(5px);
+  }
+}
 footer {
   background-color: rgb(143, 0, 0);
   height: 350px;
@@ -47,8 +62,18 @@ nav li {
 }
 
 nav li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
+}
+
+nav ul :hover {
+  color: #0e0000;
+  background-color: red;
+  transition: all 1s;
+}
+
+nav ul :not(hover) {
+  transition: all 1s;
 }
 
 .blanco {
@@ -65,6 +90,21 @@ nav li a {
   max-width: 100%;
 }
 
+.texto-animado {
+  --bg-size: 400%;
+  --color-one: hsl(0, 0%, 0%);
+  --color-two: hsl(0, 0%, 7%);
+  background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0/var(--bg-size) 100%;
+  animation: move-bg 20s infinite linear;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
 .video video {
   text-align: center;
   width: 90%;
@@ -92,8 +132,19 @@ nav li a {
 .botonauto {
   text-align: center;
   font-size: 250%;
-  text-decoration-color: none;
   color: #fff;
+}
+
+.botonauto :hover {
+  text-align: center;
+  font-size: 150%;
+  color: #ff0000;
+  transition: all 2s;
+}
+
+.botonauton :not(hover) {
+  transition: all 2s;
+  font-size: 50%;
 }
 
 .pie {
@@ -106,14 +157,6 @@ nav li a {
   font-size: 250%;
   text-decoration: none;
   color: #fff;
-}
-
-td img {
-  padding-top: 8%;
-  color: #fff;
-  text-align: center;
-  width: 80%;
-  margin: auto;
 }
 
 td {
@@ -177,6 +220,124 @@ div p {
 .gris {
   color: darkred;
   max-width: 0%;
+}
+
+.tablaautos {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+}
+
+.Porsche {
+  text-align: left;
+}
+
+.Porsche:not(:hover) {
+  opacity: 0;
+  transform: translateX(110%);
+  transition: all 2s;
+}
+
+.Porsche:hover {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.Volkswagen {
+  text-align: left;
+}
+
+.Volkswagen:not(:hover) {
+  opacity: 0;
+  transform: translateX(110%);
+  transition: all 2s;
+}
+
+.Volkswagen:hover {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.Mercedes-Benz {
+  text-align: left;
+}
+
+.Mercedes-Benz:not(:hover) {
+  opacity: 0;
+  transform: translateX(110%);
+  transition: all 2s;
+}
+
+.Mercedes-Benz:hover {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.Jeep {
+  text-align: left;
+}
+
+.Jeep:not(:hover) {
+  opacity: 0;
+  transform: translateX(110%);
+  transition: all 2s;
+}
+
+.Jeep:hover {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.BMW {
+  text-align: left;
+}
+
+.BMW:not(:hover) {
+  opacity: 0;
+  transform: translateX(110%);
+  transition: all 2s;
+}
+
+.BMW:hover {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.Audi {
+  text-align: left;
+}
+
+.Audi:not(:hover) {
+  opacity: 0;
+  transform: translateX(110%);
+  transition: all 2s;
+}
+
+.Audi:hover {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
+}
+
+.DS {
+  text-align: left;
+}
+
+.DS:not(:hover) {
+  opacity: 0;
+  transform: translateX(110%);
+  transition: all 2s;
+}
+
+.DS:hover {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 2s;
 }
 
 @media (max-width: 767px) or (max-height: 769px) {
@@ -266,6 +427,62 @@ div p {
     text-align: center;
     margin: auto;
     font-size: 100%;
+  }
+  .Porsche {
+    text-align: left;
+  }
+  .Porsche:not(:hover) {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0s;
+  }
+  .Volkswagen {
+    text-align: left;
+  }
+  .Volkswagen:not(:hover) {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0s;
+  }
+  .Mercedes-Benz {
+    text-align: left;
+  }
+  .Mercedes-Benz:not(:hover) {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0s;
+  }
+  .Jeep {
+    text-align: left;
+  }
+  .Jeep:not(:hover) {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0s;
+  }
+  .BMW {
+    text-align: left;
+  }
+  .BMW:not(:hover) {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0s;
+  }
+  .Audi {
+    text-align: left;
+  }
+  .Audi:not(:hover) {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0s;
+  }
+  .DS {
+    text-align: left;
+  }
+  .DS:not(:hover) {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 0s;
   }
 }
 
