@@ -82,7 +82,7 @@ nav ul :not(hover) {
 }
 
 .grande {
-  padding: 10% 5%;
+  padding: 5% 5%;
   font-size: 650%;
   font-weight: 600;
   text-align: center;
@@ -93,7 +93,7 @@ nav ul :not(hover) {
 .texto-animado {
   --bg-size: 400%;
   --color-one: hsl(0, 0%, 0%);
-  --color-two: hsl(0, 0%, 7%);
+  --color-two: hsl(0, 2%, 12%);
   background: linear-gradient(90deg, var(--color-one), var(--color-two), var(--color-one)) 0 0/var(--bg-size) 100%;
   animation: move-bg 20s infinite linear;
   color: transparent;
@@ -229,7 +229,8 @@ div p {
 }
 
 .Porsche {
-  text-align: left;
+  text-align: center;
+  border: rgb(255, 0, 0) 2px solid;
 }
 
 .Porsche:not(:hover) {
@@ -245,7 +246,8 @@ div p {
 }
 
 .Volkswagen {
-  text-align: left;
+  text-align: center;
+  border: rgb(255, 0, 0) 2px solid;
 }
 
 .Volkswagen:not(:hover) {
@@ -261,7 +263,8 @@ div p {
 }
 
 .Mercedes-Benz {
-  text-align: left;
+  text-align: center;
+  border: rgb(255, 3, 3) 2px solid;
 }
 
 .Mercedes-Benz:not(:hover) {
@@ -277,7 +280,8 @@ div p {
 }
 
 .Jeep {
-  text-align: left;
+  text-align: center;
+  border: rgb(247, 5, 5) 2px solid;
 }
 
 .Jeep:not(:hover) {
@@ -293,7 +297,8 @@ div p {
 }
 
 .BMW {
-  text-align: left;
+  text-align: center;
+  border: rgb(255, 0, 0) 2px solid;
 }
 
 .BMW:not(:hover) {
@@ -309,7 +314,8 @@ div p {
 }
 
 .Audi {
-  text-align: left;
+  text-align: center;
+  border: rgb(250, 0, 0) 2px solid;
 }
 
 .Audi:not(:hover) {
@@ -325,7 +331,8 @@ div p {
 }
 
 .DS {
-  text-align: left;
+  text-align: center;
+  border: rgb(255, 0, 0) 2px solid;
 }
 
 .DS:not(:hover) {

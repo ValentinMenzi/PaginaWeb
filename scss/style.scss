@@ -150,7 +150,6 @@
       text-align: center; 
       font-size: 250%;
       color: #fff;
-  
   }
 
   .botonauto :hover{
@@ -258,7 +257,8 @@
 
 
     .Porsche{
-        text-align: left;
+        text-align: center;
+        border: rgb(255, 0, 0) 2px solid;
     }
     .Porsche:not(:hover){
         opacity: 0;
@@ -273,7 +273,8 @@
     }
     
     .Volkswagen{
-        text-align: left;
+        text-align: center;
+        border: rgb(255, 0, 0) 2px solid;
     }
     .Volkswagen:not(:hover){
         opacity: 0;
@@ -288,7 +289,8 @@
     }
     
     .Mercedes-Benz{
-        text-align: left;
+        text-align: center;
+        border: rgb(255, 3, 3) 2px solid;
     }
     .Mercedes-Benz:not(:hover){
         opacity: 0;
@@ -303,7 +305,8 @@
     }
     
     .Jeep{
-        text-align: left;
+        text-align: center;
+        border: rgb(247, 5, 5) 2px solid;
     }
     .Jeep:not(:hover){
         opacity: 0;
@@ -318,7 +321,8 @@
     }
     
     .BMW{
-        text-align: left;
+        text-align: center;
+        border: rgb(255, 0, 0) 2px solid;
     }
     .BMW:not(:hover){
         opacity: 0;
@@ -333,7 +337,8 @@
     }
     
     .Audi{
-        text-align: left;
+        text-align: center;
+        border: rgb(250, 0, 0) 2px solid;
     }
     .Audi:not(:hover){
         opacity: 0;
@@ -348,7 +353,8 @@
     }
     
     .DS{
-        text-align: left;
+        text-align: center;
+        border: rgb(255, 0, 0) 2px solid;
     }
     .DS:not(:hover){
         opacity: 0;
