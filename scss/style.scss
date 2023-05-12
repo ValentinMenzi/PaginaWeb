@@ -1,104 +1,101 @@
 * {
     padding: 0;
     margin: 0;   
-  }
+}
   
-  body {
-      background-color: #000000;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='92' viewBox='0 0 112 92'%3E%3Cg fill='%233f3f3f' fill-opacity='0.13'%3E%3Cpath fill-rule='evenodd' d='M72 10H40L16 20H0v8h16l24-14h32l24 14h16v-8H96L72 10zm0-8H40L16 4H0v8h16l24-6h32l24 6h16V4H96L72 2zm0 84H40l-24-6H0v8h16l24 2h32l24-2h16v-8H96l-24 6zm0-8H40L16 64H0v8h16l24 10h32l24-10h16v-8H96L72 78zm0-12H40L16 56H0v4h16l24 14h32l24-14h16v-4H96L72 66zm0-16H40l-24-2H0v4h16l24 6h32l24-6h16v-4H96l-24 2zm0-16H40l-24 6H0v4h16l24-2h32l24 2h16v-4H96l-24-6zm0-16H40L16 32H0v4h16l24-10h32l24 10h16v-4H96L72 18z'/%3E%3C/g%3E%3C/svg%3E");
-  }
+body {
+    background: #000000 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='92' viewBox='0 0 112 92'%3E%3Cg fill='%233f3f3f' fill-opacity='0.13'%3E%3Cpath fill-rule='evenodd' d='M72 10H40L16 20H0v8h16l24-14h32l24 14h16v-8H96L72 10zm0-8H40L16 4H0v8h16l24-6h32l24 6h16V4H96L72 2zm0 84H40l-24-6H0v8h16l24 2h32l24-2h16v-8H96l-24 6zm0-8H40L16 64H0v8h16l24 10h32l24-10h16v-8H96L72 78zm0-12H40L16 56H0v4h16l24 14h32l24-14h16v-4H96L72 66zm0-16H40l-24-2H0v4h16l24 6h32l24-6h16v-4H96l-24 2zm0-16H40l-24 6H0v4h16l24-2h32l24 2h16v-4H96l-24-6zm0-16H40L16 32H0v4h16l24-10h32l24 10h16v-4H96L72 18z'/%3E%3C/g%3E%3C/svg%3E");
+}
   
-  img{
+img{
     max-width: 100%;
-     }
+}
 
-  .logo{
-      max-width: 100%;
-      animation: slidein 1s ease;
-  }
+.logo{
+    max-width: 100%;
+    animation: slidein 1s ease;
+}
 
-  @keyframes slidein {
+@keyframes slidein {
     0% {
-      opacity: 0;
-      filter: contrast();
+    opacity: 0;
+    filter: contrast();
     }
   
     10% {
-      opacity: 1;
-      filter: brightness(2) blur(5px);
+    opacity: 1;
+    filter: brightness(2) blur(5px);
     }
-  }
+}
   
   
-  footer{
-      background-color: rgb(143, 0, 0);
-      height: 350px;
-  }
+footer{
+    background-color: rgb(143, 0, 0);
+    height: 350px;
+}
   
-  .pie{
-      font-size: 200%;
-      text-align: center;
+.pie{
+    font-size: 200%;
+    text-align: center;
   
-  }
+}
   
-  header{
-      background-color: rgb(0, 0, 0);
-      height: 175px;
-      position: static;
-      max-width: 100%;
-  }
+header {
+    background: rgb(0, 0, 0);
+    height: 175px;
+    max-width: 100%;
+}
   
-  .barra-inicio{
-      position: sticky;
-      top: 0;
-  }
-  
-    
-  nav ul {
-      text-align: center;
-      font-size: 150%;
-      color: #fff;
-      background-color: red;
-  }
-  
-  nav li {
-      display: inline-block;
-      padding: 1%;
-      
-  }
+.barra-inicio{
+    position: sticky;
+    top: 0;
+}
   
     
-  nav li a {
-      color: #ffffff;
-      text-decoration: none;
-  }
-
-  nav ul :hover{
-    color: #0e0000;
+nav ul {
+    text-align: center;
+    font-size: 150%;
+    color: #fff;
     background-color: red;
+}
+  
+nav li {
+    display: inline-block;
+    padding: 1%;
+      
+}
+  
+    
+nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul :hover{
+    color: #0e0000;
     transition: all 1s;
 }
     
-  nav ul :not(hover) {
+nav ul:not(:hover) {
     transition: all 1s;
 }
   
   
-  .blanco{
-      color: white;
-      text-decoration-color: #fff;
- }
+.blanco{
+    color: white;
+    text-decoration-color: #fff;
+}
 
-  .grande {
+.grande {
     padding: 5% 5%;
     font-size: 650%;
     font-weight: 600;
     text-align: center;
     font-family: "Merriweather", serif;
     max-width: 100%;
-  }
+}
 
-  .texto-animado{
+.texto-animado{
     --bg-size: 400%;
     --color-one: hsl(0, 0%, 0%);
     --color-two: hsl(0, 2%, 12%);
@@ -112,436 +109,459 @@
     animation: move-bg 20s infinite linear;
     color: transparent;
     --webkit-background-clip: text;
-  }
+}
   
-  @keyframes move-bg {
+@keyframes move-bg {
     to {
-      background-position: var(--bg-size) 0;
+        background-position: var(--bg-size) 0;
     }
-  }
+}
   
 
-  .video video{
-      text-align: center; 
-      width: 90%;
-      position: static;
-  }
-  
-  .video{
-      text-align: center; 
-  }
-  
-  .logo img{
-      width: 250px;
-  }
-  
-  .logo{
-      text-align: center;
-      padding-top: 2%;
-      padding-bottom: 2%;
-  
-  }
-  
-  .negro{
-      color: black;
-  }
-  
-  .botonauto{
-      text-align: center; 
-      font-size: 250%;
-      color: #fff;
-  }
+.video video{
 
-  .botonauto :hover{
+    text-align: center; 
+    width: 90%;
+    position: static;
+}
+  
+.video{
+    text-align: center; 
+}
+  
+.logo img{
+    width: 250px;
+}
+  
+.logo{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+  
+.negro{
+    color: black;
+}
+  
+.botonauto{
+    text-align: center; 
+    font-size: 250%;
+    color: #fff;
+}
+
+.botonauto :hover{
     text-align: center; 
     font-size: 150%;
     color: #ff0000;
     transition: all 2s;
 }
 
-  .botonauton :not(hover) {
+.botonauton :not(hover) {
     transition: all 2s;
     font-size: 50%;
-  }
+}
   
 
 
   
-  .pie{
-      text-align: center; 
-      font-size: 250%;
-  }
+.pie{
+    text-align: center; 
+    font-size: 250%;
+}
   
-  .botoncontacto{
-      text-align: center; 
-      font-size: 250%;
-      text-decoration: none;
-      color: #fff;
-  }
+.botoncontacto{
+    text-align: center; 
+    font-size: 250%;
+    text-decoration: none;
+    color: #fff;
+}
   
 
-  td{
-      color: #fff;
-      text-align: center;
-      margin: auto;
-      font-size: 120%;
-  }
+td{
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-size: 120%;
+}
   
-  label{
-      color: #fff;
-  }
+label{
+    color: #fff;
+}
   
-  input{
-      color: #fff;
-  }
-  
-  
-  fieldset div{
-      padding-top: 1%;
-  }
+input{
+    color: #fff;
+}
   
   
-  main{
-      padding-top: 7%;
-      padding-bottom: 7%;
-  }
-  
-  html{
-      font-family: 'Merriweather', serif;
-  }
-  
-  .tablaautospadre{
-      margin: auto;
-      display: flex;
-      align-items: center;
-      flex-wrap: nowrap;
-  }
+fieldset div{
+    padding-top: 1%;
+}
   
   
-  .subtitulo{
-      text-align: center;
-      padding-bottom: 2%;
-      font-size: 300%;
-      color: #fff;
-  }
+main{
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
   
-  .parrafo{
-      margin: 0 5%;
-      font-size: 150%;
-      color: #fff;
-  }
-  div p{
-      padding-top: 2%;
-  }
+html{
+    font-family: 'Merriweather', serif;
+}
   
-  .submit{
-      background-color: white;
-      margin-top: 5px;
-      color: #000000;
-  }
+.tablaautospadre{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
   
   
-  .gris{
-      color: darkred;
-      max-width: 0%;
-  }
+.subtitulo{
+    text-align: center;
+    padding-bottom: 2%;
+    font-size: 300%;
+    color: #fff;
+}
+  
+.parrafo{
+    margin: 0 5%;
+    font-size: 150%;
+    color: #fff;
+}
 
+div p{
+    padding-top: 2%;
+}
+  
+.submit{
+    background-color: white;
+    margin-top: 5px;
+    color: #000000;
+}
+  
+.gris{
+    color: darkred;
+    max-width: 0%;
+}
 
-
- 
-    .tablaautos {
-        width: 100%;
-        height: 100%;
-        padding: 10%;
+.tablaautos {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
   }
 
 
-    .Porsche{
-        text-align: center;
-        border: rgb(255, 0, 0) 2px solid;
-    }
-    .Porsche:not(:hover){
-        opacity: 0;
-        transform:
-        translateX(110%);
-        transition: all 2s;
-    }
-    .Porsche:hover{
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 2s;
-    }
+.Porsche{
+    text-align: center;
+    border: rgb(255, 0, 0) 2px solid;
+}
+
+.Porsche:not(:hover){
+    opacity: 0;
+    transform:
+    translateX(110%);
+    transition: all 2s;
+}
+
+.Porsche:hover{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}
     
-    .Volkswagen{
-        text-align: center;
-        border: rgb(255, 0, 0) 2px solid;
-    }
-    .Volkswagen:not(:hover){
-        opacity: 0;
-        transform:
-        translateX(110%);
-        transition: all 2s;
-    }
-    .Volkswagen:hover{
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 2s;
-    }
+.Volkswagen{
+    text-align: center;
+    border: rgb(255, 0, 0) 2px solid;
+}
+
+.Volkswagen:not(:hover){
+    opacity: 0;
+    transform:
+    translateX(110%);
+    transition: all 2s;
+}
+
+.Volkswagen:hover{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}
     
-    .Mercedes-Benz{
-        text-align: center;
-        border: rgb(255, 3, 3) 2px solid;
-    }
-    .Mercedes-Benz:not(:hover){
-        opacity: 0;
-        transform:
-        translateX(110%);
-        transition: all 2s;
-    }
-    .Mercedes-Benz:hover{
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 2s;
-    }
+.Mercedes-Benz{
+    text-align: center;
+    border: rgb(255, 3, 3) 2px solid;
+}
     
-    .Jeep{
-        text-align: center;
-        border: rgb(247, 5, 5) 2px solid;
-    }
-    .Jeep:not(:hover){
-        opacity: 0;
-        transform:
-        translateX(110%);
-        transition: all 2s;
-    }
-    .Jeep:hover{
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 2s;
-    }
+.Mercedes-Benz:not(:hover){
+    opacity: 0;
+    transform:
+    translateX(110%);
+    transition: all 2s;
+}
+
+.Mercedes-Benz:hover{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+.Jeep{
+    text-align: center;
+    border: rgb(247, 5, 5) 2px solid;
+}
+
+.Jeep:not(:hover){
+    opacity: 0;
+    transform:
+    translateX(110%);
+    transition: all 2s;
+}
+
+.Jeep:hover{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}
     
-    .BMW{
-        text-align: center;
-        border: rgb(255, 0, 0) 2px solid;
-    }
-    .BMW:not(:hover){
-        opacity: 0;
-        transform:
-        translateX(110%);
-        transition: all 2s;
-    }
-    .BMW:hover{
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 2s;
-    }
+.BMW{
+    text-align: center;
+    border: rgb(255, 0, 0) 2px solid;
+}
     
-    .Audi{
-        text-align: center;
-        border: rgb(250, 0, 0) 2px solid;
-    }
-    .Audi:not(:hover){
-        opacity: 0;
-        transform:
-        translateX(110%);
-        transition: all 2s;
-    }
-    .Audi:hover{
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 2s;
-    }
+.BMW:not(:hover){
+    opacity: 0;
+    transform:
+    translateX(110%);
+    transition: all 2s;
+}
     
-    .DS{
-        text-align: center;
-        border: rgb(255, 0, 0) 2px solid;
-    }
-    .DS:not(:hover){
-        opacity: 0;
-        transform:
-        translateX(110%);
-        transition: all 2s;
-    }
-    .DS:hover{
-        opacity: 1;
-        transform: translateX(0);
-        transition: all 2s;
-    }
+.BMW:hover{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}
+    
+.Audi{
+    text-align: center;
+    border: rgb(250, 0, 0) 2px solid;
+}
+    
+.Audi:not(:hover){
+    opacity: 0;
+    transform:
+    translateX(110%);
+    transition: all 2s;
+}
+    
+.Audi:hover{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}
+    
+.DS{
+    text-align: center;
+    border: rgb(255, 0, 0) 2px solid;
+}
+    
+.DS:not(:hover){
+    opacity: 0;
+    transform:
+    translateX(110%);
+    transition: all 2s;
+}
+    
+.DS:hover{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 2s;
+}
     
 
   
   
 
-  @media (max-width: 767px) or (max-height: 769px){
-      header{
-          background-color: rgb(0, 0, 0);
-          height: 132px;
-          position: none;
-          max-width: 100%;
-          
-      }
+@media (max-width: 767px) or (max-height: 769px){
+    header{
+        background-color: rgb(0, 0, 0);
+        height: 132px;
+        position: none;
+        max-width: 100%;
+    }
       
-      .grande {
-          text-align: center;
-          font-size: 250%;
-          width: 90vw;
-          font-family: 'Merriweather', serif;
-          max-width: 100%;
-      }
+    .grande {
+        text-align: center;
+        font-size: 250%;
+        width: 90vw;
+        font-family: 'Merriweather', serif;
+        max-width: 100%;
+    }
      
-      nav ul {
-          text-align: center;
-          font-size: 80%;
-          color: #fff;
-          background-color: red;
-      }
+    nav ul {
+        text-align: center;
+        font-size: 80%;
+        color: #fff;
+        background-color: red;
+    }
       
-      nav li {
-          display: inline-block;
-          padding: 1%;
-      }  
-      nav li a {
-          color: #fff;
-      }
+    nav li {
+        display: inline-block;
+        padding: 1%;
+    }  
+
+    nav li a {
+        color: #fff;
+    }
       
-      .botonauto {
-          font-size: 100%;
-      }
+    .botonauto {
+        font-size: 100%;
+    }
   
-      .barra-inicio{
-          position: static;
-          top: 0;
-          width: 100%;
-          font-size: 100%;
-      }
-      .video video{
-          text-align: center; 
-          width: 90%;
-          padding-top: 1%;
-      }
-      .logo{
-          max-width: 100%;
-      }
-      .pie{
-          font-size: 150%;
-          padding-left: 1%;
-          padding-right: 1%;
-      }
-  
-      .botoncontacto{
-          font-size: 140%;
-      }
-  
-      footer{
-          background-color: rgb(143, 0, 0);
-          height: 220px;
-      }
-  
-      .tablaautos{
-          text-align: center;
-          font-size: 75%;
-          margin: 1% 1%;
-          padding-bottom: 1%;
-      }
-  
-      .subtitulo{
-          text-align: center;
-          font-size: 200%;
-      }
-  
-      .parrafo{
-          text-align: center;
-          font-size: 100%;
-      }
-  
-      fieldset div{
-          padding-top: 1%;
-          font-size: 80%;
-      }
-  
-      .contacofooter {
-          padding-top: 100%;
-      }
-      .tablaautospadre{
-          margin: auto;
-          display: flex;
-          align-items: center;
-      }
-      td{
-          color: #fff;
-          text-align: center;
-          margin: auto;
-          font-size: 100%;
-   
-        }
-        .Porsche{
-            text-align: left;
-        }
-        .Porsche:not(:hover){
-            opacity: 1;
-            transform:
-            translateX(0%);
-            transition: all 0s;
-        }
-        .Volkswagen{
-            text-align: left;
-        }
-        .Volkswagen:not(:hover){
-            opacity: 1;
-            transform:
-            translateX(0%);
-            transition: all 0s;
-        }
-        .Mercedes-Benz{
-            text-align: left;
-        }
-        .Mercedes-Benz:not(:hover){
-            opacity: 1;
-            transform:
-            translateX(0%);
-            transition: all 0s;
-        }
-        
-        .Jeep{
-            text-align: left;
-        }
-        .Jeep:not(:hover){
-            opacity: 1;
-            transform:
-            translateX(0%);
-            transition: all 0s;
-        }
+    .barra-inicio{
+        position: static;
+        top: 0;
+        width: 100%;
+        font-size: 100%;
+    }
 
-        .BMW{
-            text-align: left;
-        }
-        .BMW:not(:hover){
-            opacity: 1;
-            transform:
-            translateX(0%);
-            transition: all 0s;
-        }
+    .video video{
+        text-align: center; 
+        width: 90%;
+        padding-top: 1%;
+    }
 
-        
-        .Audi{
-            text-align: left;
-        }
-        .Audi:not(:hover){
-            opacity: 1;
-            transform:
-            translateX(0%);
-            transition: all 0s;
-        }
+    .logo{
+        max-width: 100%;
+    }
 
+    .pie{
+        font-size: 150%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+  
+    .botoncontacto{
+        font-size: 140%;
+    }
+  
+    footer{
+        background-color: rgb(143, 0, 0);
+        height: 220px;
+    }
+  
+    .tablaautos{
+        text-align: center;
+        font-size: 75%;
+        margin: 1% 1%;
+        padding-bottom: 1%;
+    }
+  
+    .subtitulo{
+        text-align: center;
+        font-size: 200%;
+    }
+  
+    .parrafo{
+        text-align: center;
+        font-size: 100%;
+    }
+  
+    fieldset div{
+        padding-top: 1%;
+        font-size: 80%;
+    }
+  
+    .contacofooter {
+        padding-top: 100%;
+    }
+
+    .tablaautospadre{
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    td{
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        font-size: 100%;
+    }
         
-        .DS{
-            text-align: left;
-        }
-        .DS:not(:hover){
-            opacity: 1;
-            transform:
-            translateX(0%);
-            transition: all 0s;
-        }
+    .Porsche{
+        text-align: left;
+    }
+        
+    .Porsche:not(:hover){
+        opacity: 1;
+        transform:
+        translateX(0%);
+        transition: all 0s;
+    }
+        
+    .Volkswagen{
+        text-align: left;
+    }
+        
+    .Volkswagen:not(:hover){
+        opacity: 1;
+        transform:
+        translateX(0%);
+        transition: all 0s;
+    }
+        
+    .Mercedes-Benz{
+        text-align: left;
+    }
+        
+    .Mercedes-Benz:not(:hover){
+        opacity: 1;
+        transform:
+        translateX(0%);
+        transition: all 0s;
+    }
+        
+    .Jeep{
+        text-align: left;
+    }
+        
+    .Jeep:not(:hover){
+        opacity: 1;
+        transform:
+        translateX(0%);
+        transition: all 0s;
+    }
+
+    .BMW{
+        text-align: left;
+    }
+        
+    .BMW:not(:hover){
+        opacity: 1;
+        transform:
+        translateX(0%);
+        transition: all 0s;
+    }
+
+    .Audi{
+        text-align: left;
+    }
+        
+    .Audi:not(:hover){
+        opacity: 1;
+        transform:
+        translateX(0%);
+        transition: all 0s;
+    }
+
+    .DS{
+        text-align: left;
+    }
+        
+    .DS:not(:hover){
+        opacity: 1;
+        transform:
+        translateX(0%);
+        transition: all 0s;
+    }
  
   }
